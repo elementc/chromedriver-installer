@@ -39,7 +39,11 @@ module Chromedriver
     end
 
     def binary_path
-      File.join platform_install_dir, "chromedriver"
+      if platform == "win"
+        File.join platform_install_dir, "chromedriver.exe"
+      else
+        File.join platform_install_dir, "chromedriver"
+      end
     end
 
     def platform_install_dir
