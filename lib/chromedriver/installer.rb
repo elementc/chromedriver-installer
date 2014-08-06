@@ -1,10 +1,10 @@
-require "chromedriver/helper/version"
-require "chromedriver/helper/google_code_parser"
+require "chromedriver/installer/version"
+require "chromedriver/installer/google_code_parser"
 require 'fileutils'
 require 'rbconfig'
 
 module Chromedriver
-  class Helper
+  class Installer
 
     def run *args
       download
@@ -47,7 +47,7 @@ module Chromedriver
     end
 
     def install_dir
-      dir = File.expand_path File.join(ENV['HOME'], ".chromedriver-helper")
+      dir = File.expand_path File.join(ENV['HOME'], ".chromedriver-installer")
       FileUtils.mkdir_p dir
       dir
     end

@@ -1,5 +1,10 @@
 Changelog
 ==========
+0.0.6 - 5 July 2014
+----------
+
+* Fixed windows support, fixed Google downloads. (Thanks, Mars!)
+
 
 0.0.5 - 15 Aug 2012
 ----------

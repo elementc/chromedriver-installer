@@ -1,10 +1,10 @@
 require "spec_helper"
 
-describe Chromedriver::Helper::GoogleCodeParser do
+describe Chromedriver::Installer::GoogleCodeParser do
   before(:each) do
-    Chromedriver::Helper::GoogleCodeParser.any_instance.stub(:open).and_return(File.read(File.join(File.dirname(__FILE__), "assets/google-code-bucket.xml")))
+    Chromedriver::Installer::GoogleCodeParser.any_instance.stub(:open).and_return(File.read(File.join(File.dirname(__FILE__), "assets/google-code-bucket.xml")))
   end
-  let!(:parser) { Chromedriver::Helper::GoogleCodeParser.new('mac') }
+  let!(:parser) { Chromedriver::Installer::GoogleCodeParser.new('mac') }
 
   describe "#downloads" do
     it "returns an array of URLs for the platform" do

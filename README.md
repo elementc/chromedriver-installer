@@ -1,18 +1,18 @@
-# chromedriver-helper
+# chromedriver-installer
 
 Easy installation and use of chromedriver, the Chromium project's
 selenium webdriver adapter.
 
-* [http://github.com/flavorjones/chromedriver-helper](http://github.com/flavorjones/chromedriver-helper)
+* [http://github.com/elementc/chromedriver-installer](http://github.com/installer/chromedriver-installer)
 
 
 # Description
 
-`chromedriver-helper` installs an executable, `chromedriver`, in your
+`chromedriver-installer` installs an executable, `chromedriver`, in your
 gem path.
 
 This script will, if necessary, download the appropriate binary for
-your platform and install it into `~/.chromedriver-helper`, then exec
+your platform and install it into `~/.chromedriver-installer`, then exec
 it. Easy peasy!
 
 chromedriver is fast. By my unscientific benchmark, it's around 20%
@@ -24,7 +24,7 @@ faster than webdriver + Firefox 8. You should use it!
 If you're using Bundler and Capybara, it's as easy as:
 
     # Gemfile
-    gem "chromedriver-helper"
+    gem "chromedriver-installer"
 
 then, in your specs:
 
@@ -49,7 +49,7 @@ for an example).
 # Support
 
 The code lives at
-[http://github.com/flavorjones/chromedriver-helper](http://github.com/flavorjones/chromedriver-helper).
+[http://github.com/elementc/chromedriver-installer](http://github.com/flavorinstaller/chromedriver-installer).
 Open a Github Issue, or send a pull request! Thanks! You're the best.
 
 
@@ -58,6 +58,7 @@ Open a Github Issue, or send a pull request! Thanks! You're the best.
 (The MIT License)
 
 Copyright (c) 2011: [Mike Dalessio](http://mike.daless.io)
+Forked and maintained by [Casey Doran](http://my.fit.edu/~cdoran2011)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -86,3 +87,6 @@ on http://rubygems.org/.
 
 Some improvements on the idea were taken from the installation process
 for standalone Phusion Passenger.
+
+Originally published as 'chromedriver-helper' by [Mike Dalessio](http://mike.daless.io).
+
